@@ -21,3 +21,19 @@ ___
 модульность и гибкость.
 
 Система должна быть построена на клиент-серверной архитектуре.
+
+# Средства реализации
+## Средства реализации серверной части
+* Java development kit 17
+* Spring Framework 5.3
+* Spring Boot 2.6
+* Maven 3.8
+
+## Средства реализации клиентской части
+* Html 5
+* Css 3
+* JavaScript (ECMAScript 6)
+* Node JS
+* React JS
+* Chromium
+* Electron
