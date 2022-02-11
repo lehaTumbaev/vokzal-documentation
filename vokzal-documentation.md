@@ -322,24 +322,24 @@ _[Дизайн интерфейса проводника](#design_file_manager)_
 
 
     {
-    "name": "Барнаульский автовокзал",                //имя каталога
-    "path": "Барнаульский автовокзал\"                //полный путь
-    "catalogs":[                                      //массив вложенных каталогов
-    "catalog"{                                        
-    "name": "Диспетчерская",
-    "path": "Барнаульский автовокзал\Диспетчерская"
-    "has_nested_catalogs": true                       //показывает, есть ли в каталоге вложенные
-    },
-    "catalog"{
-    "name": "Приёмная",
-    "path": "Барнаульский автовокзал\Приёмная"
-    "has_nested_catalogs": false
-    },
-    "catalog"{
-    "name": "Новостная",
-    "path": "Барнаульский автовокзал\Новостная"
-    "has_nested_catalogs": false
-    },
+    "name": "Барнаульский автовокзал",                       //имя каталога
+    "path": "Барнаульский автовокзал\"                       //полный путь
+    "catalogs":[                                             //массив вложенных каталогов
+        "catalog"{                                        
+            "name": "Диспетчерская",
+            "path": "Барнаульский автовокзал\Диспетчерская"
+            "hasNestedCatalogs": true                       //показывает, есть ли в каталоге вложенные
+        },
+        "catalog"{
+            "name": "Приёмная",
+            "path": "Барнаульский автовокзал\Приёмная"
+            "hasNestedCatalogs": false
+        },
+        "catalog"{
+            "name": "Новостная",
+            "path": "Барнаульский автовокзал\Новостная"
+            "hasNestedCatalogs": false
+        },
     ]
     }
 
@@ -348,29 +348,29 @@ _[Дизайн интерфейса проводника](#design_file_manager)_
     {
     "name": "Email",
     "path": "Барнаульский автовокзал\диспетчерская\Контент\Email",
-    "files":[                 //Файлы любого типа, находящиеся в данной в папке
-    {
-    "name": "Реклама ООО Ромашка",
-    "description": "Реклама необходимо раслать клиентам с на...",
-    "verification_status": "passed",
-    "last_modified_date_time": "2022-01-21T11:02:00.000+07:00",
-    "type": "Текстовый файл",
-    "author": "Алексеев Алексей Алексеевич",      //Автор контента
-    "authorEditing": "Иванов Иван Иваныч",        //Последний, кто изменил контент
-    "duration": "00:00:01",                       // Длительность
-    "permissions": ""                             //Права доступа
-    },
-    {
-    "name": "Реклама ООО Ромашка",
-    "description": "Реклама необходимо раслать клиентам с на...",
-    "verification_status": "passed",
-    "last_modified_date_time": "2022-01-21T11:02:00.000+07:00",
-    "type": "Плейлист",
-    "author": "Алексеев Алексей Алексеевич",
-    "authorEditing": "Иванов Иван Иваныч",
-    "duration": "00:00:01",
-    "permissions": ""
-    }
+    "files":[                                        //Файлы любого типа, находящиеся в данной в папке
+        {
+        "name": "Реклама ООО Ромашка",
+        "description": "Реклама необходимо раслать клиентам с на...",
+        "verificationStatus": "passed",
+        "lastModifiedDateTime": "2022-01-21T11:02:00.000+07:00",
+        "type": "Текстовый файл",
+        "author": "Алексеев Алексей Алексеевич",      //Автор контента
+        "authorEditing": "Иванов Иван Иваныч",        //Последний, кто изменил контент
+        "duration": "00:00:01",                       // Длительность
+        "permissions": ""                             //Права доступа
+        },
+        {
+        "name": "Реклама ООО Ромашка",
+        "description": "Реклама необходимо раслать клиентам с на...",
+        "verificationStatus": "passed",
+        "lastModifiedDateTime": "2022-01-21T11:02:00.000+07:00",
+        "type": "Плейлист",
+        "author": "Алексеев Алексей Алексеевич",
+        "authorEditing": "Иванов Иван Иваныч",
+        "duration": "00:00:01",
+        "permissions": ""
+        }
     ]
     }
 
@@ -382,8 +382,8 @@ _[Дизайн интерфейса верификации](#design_verification
     {
     "name": "Реклама ООО Ромашка",
     "description": "Реклама необходимо раслать клиентам с на...",
-    "verification_status": "unchecked",
-    "last_modified_date_time": "2022-01-21T11:02:00.000+07:00",
+    "verificationStatus": "unchecked",
+    "lastModifiedDateTime": "2022-01-21T11:02:00.000+07:00",
     "type": "Текстовый файл",
     "author": "Алексеев Алексей Алексеевич",      //Автор контента
     "authorEditing": "Иванов Иван Иваныч",        //Последний, кто изменил контент
@@ -393,8 +393,8 @@ _[Дизайн интерфейса верификации](#design_verification
     {
     "name": "Реклама ООО Ромашка",
     "description": "Реклама необходимо раслать клиентам с на...",
-    "verification_status": "unchecked",
-    "last_modified_date_time": "2022-01-21T11:02:00.000+07:00",
+    "verificationStatus": "unchecked",
+    "lastModifiedDateTime": "2022-01-21T11:02:00.000+07:00",
     "type": "Плейлист",
     "author": "Алексеев Алексей Алексеевич",
     "authorEditing": "Иванов Иван Иваныч",
@@ -411,31 +411,32 @@ _[Дизайн интерфейса окна "Пользователи"](#design
 
     {
     "company": [
-    {
-    "name": "Барнаульский автовокзал",
-    "users": [
-    {
-    "name": "Иванов Иван Петрович",
-    "id": "090879786755"
-    },
-    {
-    "name": "Иванов Иван Иваныч",
-    "id": "090879786755"
-    }
-    ]
-    },
-    {
-    "name": "Новоалтайский автовокзал",
-    "users": [
-    {
-    "name": "Иванов Иван Петрович",
-    "id": "090879786755"
-    },
-    {
-    "name": "Иванов Иван Иваныч",
-    "id": "090879786755"
-    }
-    ]
+        {
+        "name": "Барнаульский автовокзал",
+        "users": [
+            {
+            "name": "Иванов Иван Петрович",
+            "id": "090879786755"
+            },
+            {
+            "name": "Иванов Иван Иваныч",
+            "id": "090879786755"
+            }
+        ]
+        },
+        {
+        "name": "Новоалтайский автовокзал",
+        "users": [
+            {
+            "name": "Иванов Иван Петрович",
+            "id": "090879786755"
+            },
+            {
+            "name": "Иванов Иван Иваныч",
+            "id": "090879786755"
+            }
+        ]
+        }
     }
     
 
@@ -443,63 +444,84 @@ _[Дизайн интерфейса окна "Пользователи"](#design
 _[Дизайн интерфейса окна "Пользователь"](#design_user)_
 
     "user":{
-    "surname": "Иванов",
-    "name": "Иван",
-    "patronymic": "Петрович",
-    "locality": "Барнаул",
-    "companyType": "Автовокзал",
-    "companyName": "Барнаульский автовокзал",
-    "division": "Справочно-информационная служба",
-    "speciality": "НАЧАЛЬНИК ЦЕНТРАЛЬНОЙ ДИСПЕТЧЕРСКОЙ СЛУЖБЫ",
-    "id": "0012520022366",
-    "login": "BrnIvanIvPetr432-1",
-    "password": "BrnIvanov123!5",
-    "permissions": {
-    "patternDivision": "Справочно-информационная служба",
-    "patternSpeciality": "НАЧАЛЬНИК ЦЕНТРАЛЬНОЙ ДИСПЕТЧЕРСКОЙ СЛУЖБЫ",
-    "handPermission": {
-    "settings": {},
-    "": {},
-    "": {},
-    "fileManager": {
-    "editingDirectories": {
-    "creation": "true"
-    "removal": true,
-    "moving": false,
-    "copying": false,
-    "renaming": true,
-    "changingAccess": true
-    },
-    "contentEditing": {
-    "creation": "true"
-    "removal": true,
-    "moving": false,
-    "copying": false,
-    "renaming": true,
-    "changingAccess": true
-    }
-    },
-    "": {},
-    "": {},
-    "": {},
-    "": {},
-    "": {},
-    "": {},
-    "": {}
-    },
-    "territoryPermission": [
-    {
-    "name" : "Барнаульский автовокзал",
-    "publications": true,
-    "fileManager" : true
-    },
-    {
-    "name" : "Новоалтайский автовокзал",
-    "publications": flase,
-    "fileManager" : true
-    }
-    ]
-    }
+        "surname": "Иванов",
+        "name": "Иван",
+        "patronymic": "Петрович",
+        "locality": "Барнаул",
+        "companyType": "Автовокзал",
+        "companyName": "Барнаульский автовокзал",
+        "division": "Справочно-информационная служба",
+        "speciality": "НАЧАЛЬНИК ЦЕНТРАЛЬНОЙ ДИСПЕТЧЕРСКОЙ СЛУЖБЫ",
+        "id": "0012520022366",
+        "login": "BrnIvanIvPetr432-1",
+        "password": "BrnIvanov123!5",
+        "permissions": {
+            "patternDivision": "Справочно-информационная служба",
+            "patternSpeciality": "Начальник специальной диспетчерской службы от 2022 года",
+            "handPermission": {
+                "settings": {
+                    "history": false,
+                    "aboutProgram": true,
+                },
+                "fileManager": {
+                    "catalogsEditing": {
+                    "creation": "true"
+                    "removal": true,
+                    "moving": false,
+                    "copying": false,
+                    "renaming": true,
+                    "accsessChanging": true
+                    }
+                },
+                "contentEditing": {
+                    content{
+                        "creation": "true"
+                        "removal": true,
+                        "moving": false,
+                        "copying": false,
+                        "renaming": true,
+                        "accessChanging": true
+                    },
+                    playlist{
+                        "creation": "true"
+                        "removal": true,
+                        "moving": false,
+                        "copying": false,
+                        "renaming": true,
+                        "accessChanging": true
+                    }
+                },
+                publicationsManager{
+                    pubications{
+                        "creation": "true"
+                        "removal": true,
+                        "renaming": true,
+                    },
+                    executors{
+                        "turningOnAndOff": true
+                        "renaming":true
+                    },
+                    channels{
+                        "turningOnAndOff": true
+                        "renaming":true
+                    }
+                },
+                "verification": false
+            }
+        },
+        "territoryPermission": [
+            {
+            "name" : "Барнаульский автовокзал",
+            "publicationManager": true,
+            "fileManager" : true
+            },
+            {
+            "name" : "Новоалтайский автовокзал",
+            "publicationManager": false,
+            "fileManager" : false
+            }
+        ]
+        }
     }
 
 #### Json-файлы для окна "Администратор" <a id="admin"></a>
@@ -508,15 +530,15 @@ _[Дизайн интерфейса окна "Администратор"](#desi
 ##### Json-файл для фрейма "Предприятия"
     {
     [
-    {
-    "name": "Барнаульский автовокзал"
-    },
-    {
-    "name": "Новоалтайский автовокзал"
-    },
-    {
-    "name": "Новосибирский автовокзал"
-    }
+        {
+        "name": "Барнаульский автовокзал"
+        },
+        {
+        "name": "Новоалтайский автовокзал"
+        },
+        {
+        "name": "Новосибирский автовокзал"
+        }
     ]
     }
 
@@ -531,21 +553,21 @@ _[Дизайн интерфейса окна "Администратор"](#desi
     "companyName": "Барнаульский автовокзал",
     "id": "001",
     "email": "",
-    "folder": {
-    "name": "",
-    "path": "C:\",
-    "catalogs": [
-    {
-    "name": "",
-    "path": "C:\+name",
-    "has_inner_catalogs": false
-    },
-    {
-    "name": "",
-    "path": "C:\+name",
-    "has_inner_catalogs": true
-    }
-    ]
+    "catalog": {
+        "name": "",
+        "path": "C:\",
+        "catalogs": [
+            {
+            "name": "",
+            "path": "C:\+name",
+            "hasInnerCatalogs": false
+            },
+            {
+            "name": "",
+            "path": "C:\+name",
+            "hasInnerCatalogs": true
+            }
+        ]
     }
     }
 
